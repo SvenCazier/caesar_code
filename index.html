@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Ceasar Code</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="" />
+		<style>
+			section {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			section > textarea {
+				width: 100%;
+				resize: none;
+			}
+
+			.fakeButton {
+				color: black;
+				display: inline-block;
+				text-align: center;
+				align-items: flex-start;
+				cursor: pointer;
+				box-sizing: border-box;
+				background-color: #e5e5e5;
+				margin: 0em;
+				padding-block: 1px;
+				padding-inline: 6px;
+				border-width: 1px;
+				border-style: outset;
+				border-color: black;
+				border-radius: 3px;
+			}
+			.fakeButton:hover {
+				background-color: #d5d5d5;
+			}
+			.fileInput {
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<section>
+			<h1>DE CAESAR CODE</h1>
+			<textarea id="invulveld1" rows="10"></textarea>
+			<span><label id="deviatie-label"></label><input id="deviatie-slider" type="range" min="0" max="25" value="5" /></span>
+			<textarea id="invulveld2" rows="10"></textarea>
+			<p>DE CAESAR CODE WERKT IN BEIDE RICHTINGEN EN WORDT AANGEPAST ZODRA U TEKST INTIKT</p>
+			<label class="fakeButton" for="bestand">Invoerbestand<input class="fileInput" id="bestand" type="file" accept="application/json" /></label>
+		</section>
+		<script src="public/js/index.js" type="module" async defer></script>
+	</body>
+</html>
